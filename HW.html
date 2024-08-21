@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <body>
+            <p>The code for myFunction1 is called when you click the text</p>
+            <h3 id="demo" onclick="myFunction3()" onmouseover="myFunction1()">click me to change my color to Pink.</h3>
+            <script>
+                function myFunction1(){
+                    document.getElementByid("demo") .style.color="red";
+                }
+                function myFunction2(){
+                    document.getElementById("demo").style.color="black";
+                }
+                function myFunction3(){
+                    document.getElementById("demo").style.color="pink";
+                }
+                function ll(){
+                    alert("hello girls");
+                }
+            </script>
+            <form>
+                <input type="button" value="click to reset" onclick="myFunction2()"/>  
+                <br/>
+                <input type="button" value="click to see" onclick="ll()"/>
+            </form>
+        </body>
+    </head>
+</html>
